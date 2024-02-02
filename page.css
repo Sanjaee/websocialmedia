@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 69px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+}
+.kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  position: absolute;
+  left: 15px;
+}
+.kiri input {
+  font-size: 16px;
+  font-weight: 400;
+  width: 256px;
+  height: 30px;
+  padding-left: 40px;
+  border-radius: 50px;
+  border-color: #bdbdbd;
+}
+
+/* semua bacaan */
+.kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star2 {
+  margin-right: 20px;
+}
+.kanan button {
+  padding: 8px 26px 8px 26px;
+  margin-right: 20px;
+  border-radius: 24px;
+  border: none;
+  background-color: #005555;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border-color: black;
+  border: solid 2px;
+  margin-right: 10px;
+}
+.profile_name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.main_container {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+}
+.kiri_main {
+  max-width: 800px;
+}
+
+.main_container section {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.scroll {
+  width: 100%;
+  padding: 5px;
+  overflow-x: auto;
+  display: flex;
+}
+.all_topic {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #005555;
+  white-space: nowrap;
+}
+.category button {
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  padding: 5px;
+  white-space: nowrap;
+  background-color: #e1e6ef;
+  color: #222325;
+}
+.card_semuabacaan {
+  margin-top: 20px;
+}
+.card {
+  margin-top: 20px;
+}
+section .card {
+  display: flex;
+}
+.card_img {
+  object-fit: cover;
+  object-position: cover;
+  width: 225px;
+  height: 150px;
+}
+.card_text {
+  margin-left: 15px;
+}
+.date {
+  color: #4a505c;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.author {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.author img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+.author p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a505c;
+}
+.card button {
+  margin-top: 15px;
+  border-radius: 24px;
+  padding: 5px 10px;
+  border: solid 1px #4a505c;
+  background-color: white;
+}
+.category_fav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category_fav .fav {
+  height: 15px;
+  width: 11.67px;
+  margin-right: 5px;
+}
+
+/* bacaan populer */
+
+.bacaan_populer {
+  margin-top: 20px;
+}
+.bacaan_populer h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.tag_date {
+  display: flex;
+  align-items: center;
+}
+
+.card_populer {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fdf0cc;
+  border-radius: 10px;
+  height: 126px;
+  min-width: 290px;
+}
+
+.card_bacaan_populer {
+  margin-top: 20px;
+}
+.tag {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.card_populer h3 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* reskomendasi penulis */
+
+.rekomendasi_penulis {
+  width: 335px;
+}
+
+.rekomendasi_penulis h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card_penulis {
+  margin-top: 30px;
+}
+.list_penulis {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.penulis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penulis img {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+
+  margin-right: 10px;
+}
+.penulis p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list_penulis button {
+  padding: 6px 22px 6px 22px;
+  border-radius: 24px;
+  border: solid 2px #005555;
+  background-color: white;
+  color: #005555;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer {
+  border: 1px solid #e1e6ef;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6c717a;
+  justify-content: center;
+  margin-top: 40px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .main_container {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+  }
+  .kiri_main {
+    order: 3;
+  }
+  .kanan_main {
+    order: 2;
+  }
+  .bacaan_populer h1 {
+    font-size: 18px;
+  }
+
+  .kiri_main h1 {
+    font-size: 18px;
+  }
+  .category {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .nav_mobile {
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  .kiri_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kiri_mobile img {
+    width: 102px;
+    height: 28px;
+    margin-left: 20px;
+  }
+  .kanan_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .notif_mobile {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+  }
+  .profile_mobile {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+  .main_mobile {
+    margin-left: 20px;
+    margin-top: 90px;
+    margin-right: 20px;
+    min-width: 320px;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .input_mobile input {
+    margin-right: 15px;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: solid 1px #d1d1d1;
+  }
+  .input_mobile input::placeholder {
+    padding-left: 50px;
+  }
+  .main_mobile img {
+    height: 17px;
+    width: 17px;
+    top: 14px;
+    left: 20px;
+    position: absolute;
+  }
+  .category_mobile {
+    margin-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .category_mobile button {
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    padding: 4px;
+    background-color: #f1f3f9;
+    color: #222325;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  .card_img {
+    width: 100px;
+    height: 119px;
+  }
+  .card_text {
+    margin-right: 20px;
+  }
+  .date {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .author img {
+    width: 16px;
+    height: 16px;
+  }
+  .author p {
+    font-size: 11px;
+  }
+  .category_fav button {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+  .bacaan_populer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .rekomendasi_penulis_mobile {
+    order: 4;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .card_penulis {
+    margin-top: 10px;
+  }
+  .rekomendasi_penulis_mobile h1 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .rekomendasi_penulis {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main_mobile {
+    display: none;
+  }
+  .nav_mobile {
+    display: none;
+  }
+  .rekomendasi_penulis {
+    margin-top: 20px;
+  }
+  .rekomendasi_penulis_mobile {
+    display: none;
+  }
+}

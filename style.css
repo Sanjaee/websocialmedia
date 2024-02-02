@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header div {
+  height: 640px;
+}
+
+.kiri img {
+  width: 100%;
+  min-height: 640px;
+  object-fit: cover;
+  object-position: center;
+}
+.kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 640px;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 326px;
+  height: 465px;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.table h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1d2433;
+}
+.table p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #4a505c;
+}
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a505c;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+form input {
+  min-width: 278px;
+  height: 32px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: #dbdde2;
+}
+form button {
+  width: 100%;
+  height: 33px;
+  background-color: #005555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: #034343;
+  cursor: pointer;
+}
+form span {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c717a;
+  font-size: 14px;
+  font-weight: 400;
+}
+.google {
+  width: 100%;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: solid 2px #dbdde2;
+  margin-top: 20px;
+}
+
+.google:hover {
+  background-color: #6c717a;
+  cursor: pointer;
+  color: white;
+}
+.google p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.google img {
+  height: 16.96px;
+  width: 17.31px;
+  margin-right: 5px;
+  margin-top: 6px;
+}
+.log {
+  display: flex;
+  gap: 40px;
+}
+.log p {
+  font-size: 12px;
+  color: #005555;
+  font-weight: 400;
+}
+.log span {
+  font-weight: 600;
+  color: #074141;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-color: #f1f3f9;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+  }
+  .table {
+    background-color: white;
+  }
+  .kiri {
+    display: none;
+  }
+  .kanan {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logomobile {
+    margin-bottom: 30px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .logomobile {
+    display: none;
+  }
+}

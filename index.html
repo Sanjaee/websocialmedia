@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="kiri">
+        <img src="assets/Illustrationbg.png" alt="" />
+      </div>
+      <div class="kanan">
+        <img class="logomobile" src="assets/Logom.png" alt="" />
+        <div class="table">
+          <form action="">
+            <h1>Login</h1>
+            <p>Selamat datang kembali!</p>
+            <label for="email">Email</label>
+            <input type="email" />
+            <label for="password">Kata sandi</label>
+            <input type="password" />
+            <main class="log">
+              <p>Belum Punya Akun? <span>Register</span></p>
+              <p><span>Lupa Password?</span></p>
+            </main>
+            <button onclick="handleClick()">Login</button>
+            <span>atau</span>
+            <button onclick="handleClick()" class="google" href="">
+              <img src="assets/Vector.png" alt="" />
+              <p>Login dengan Google</p>
+            </button>
+          </form>
+        </div>
+        <footer>© 2023 PT. Median. All Rights Reserved</footer>
+      </div>
+    </header>
+    <script>
+      // alert("masukan email dan kata sandi jika tidak maka tidak bisa masuk");
+      const button = document.querySelector("button");
+      function handleClick() {
+        alert("Login Berhasil");
+        window.location.href = "page.html";
+      }
+    </script>
+  </body>
+</html>
